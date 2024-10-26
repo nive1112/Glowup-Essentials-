@@ -1,0 +1,155 @@
+.navbar{
+    padding: 20px 0px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-menu{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    color:#49557e;
+    font-size:20px;
+    left: 100px;
+    top:-40px;
+}
+.nav-right{
+display: flex;
+align-items:center;
+gap: 40px;
+left: 200px;
+top:-20px;
+}
+.navbar-search{
+top:-20px;
+left:1px;
+}
+.navbar button{
+    background: transparent;
+    font-size: 16px;
+    color:#49557e;
+    border:1px solid pink;
+padding:10px 30px;
+border-radius:50px;
+cursor:pointer;
+transition: 0.3s;
+top:-40px;
+}
+.navbar button:hover{
+    background-color:pink; 
+}
+.navbar .active{
+    padding-bottom: 2px;
+    border-bottom: 3px solid #49557e;
+}
+.navbar li{
+    cursor: pointer;
+}
+.navbar-search{
+    position: relative;
+}
+.navbar-search .dot{
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    background-color:  tomato;
+    border-radius: 100%;
+    top:-30px;
+    right:-20px;
+    left:10px;
+}
+.srh{
+top:-40px;
+left: -80px;
+}
+.navbar-profile{
+    position: absolute;
+left: 0px;
+top:-20px;
+}
+.nav-profile-dropdown {
+    position: relative;
+    display:none;
+    right:0;
+top:-100px;
+z-index:1;
+}
+.navbar-profile:hover .nav-profile-dropdown{
+   
+display: flex;
+flex-direction: column;
+gap:7px;
+
+
+list-style: none;
+left:20px;
+top:50px;
+
+}
+.nav-profile-dropdown hr{
+top: -40px;
+left:-60px;
+}
+.navbar-profile:hover .navbar-right .img{
+
+position: relative;
+}
+.nav-profile-dropdown li{
+    display:flex;
+    align-items: center;
+    gap:10px;
+    cursor: pointer;
+}
+.nav-profile-dropdown img{
+    width:20px;
+}
+.nav-profile-dropdown li:hover{
+    color:tomato;
+
+}
+@media(max-width:1050px){
+    .navbar .GLOWUPlogo{
+        width:140px;
+    }
+    .navbar-menu{
+        gap:20px;
+        font-size:17px;
+    }
+    .nav-right{
+        gap:30px;
+}
+.nav-right img{
+    width:22px;
+}
+.nav-right button{
+    padding:8px 25px;
+}
+}@media(max-width:900px){
+    .navbar .GLOWUPlogo{
+        width:120px;
+    }
+    .navbar-menu{
+        gap:15px;
+        font-size:16px;
+    }
+    .nav-right{
+        gap:20px;
+}
+.nav-right img{
+    width:20px;
+}
+.nav-right button{
+    padding:7px 20px;
+    font-size: 15px;
+}
+}
+ @media(max-width:900px){
+   
+    .navbar-menu{
+      display: none;}
+
+}
+.navbar-search img{
+    left: -5px;
+    top:2px;
+}
